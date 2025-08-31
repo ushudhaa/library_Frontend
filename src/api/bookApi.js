@@ -1,7 +1,7 @@
 // mock book api
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:5000/api/books" });
+const API = axios.create({ baseURL: "https://library-backend-7.onrender.com/api/books" });
 
 export const getBooks = () => API.get("/");
 export const getBookById = (id) => API.get(`/${id}`);

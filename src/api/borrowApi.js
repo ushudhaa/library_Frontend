@@ -1,7 +1,7 @@
 // mock borrow api
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:5000/api/borrow" });
+const API = axios.create({ baseURL: "https://library-backend-7.onrender.com/api/borrow" });
 
 export const borrowBook = (bookId) => API.post("/", { bookId });
 export const returnBook = (borrowId) => API.put(`/${borrowId}/return`);

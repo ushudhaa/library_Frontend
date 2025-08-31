@@ -1,7 +1,7 @@
 // auth api
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:5000/api" });
+const API = axios.create({ baseURL: "https://library-backend-7.onrender.com/api" });
 
 export const loginApi = async (formData) => {
   const response = await API.post("/auth/login", formData);
